@@ -1,0 +1,102 @@
+
+<---- /auth/register ---->
+in Body to give the
+
+{
+    "name":"your_name",
+    "phone":"number",
+    "email":"example@gmail.com",
+    "password":"your Passsword"
+}
+
+###############################################################################################################
+
+<---- /auth/login ----->
+
+** details as registerd **
+
+{
+    "email":"your_email@gmail.com",
+    "password":"your password"
+}
+
+if you login you get the two tokens one access token and refresh token and token type as bearer
+
+------------------------------------------
+
+it will return the{
+
+    access token,
+    refresh token ,
+    token type
+}
+
+###############################################################################################################
+
+<---- /course/course-list ---->
+
+it will show all the courses
+
+------------------------------------------
+it will return a {
+    list of courses in a list
+}
+
+###############################################################################################################
+
+<---- /course/course-list/{id_of_the_course} ---->
+
+it will shows the specific course details
+
+------------------------------------------
+it will return a {
+    one course
+}
+
+###############################################################################################################
+
+<---- /dashboard/enroll ---->
+
+*** you need a access token ***
+
+<--- header --->
+
+"Authorization" : "Bearer <access_token>"
+
+<--- body --->
+
+{
+
+    "course_id":"course_id"
+}
+
+###############################################################################################################
+
+<---- /auth/refresh-token ---->
+here you can get the access token by using refresh_token
+
+<--- body --->
+
+{
+    "refresh_token" :"Bearer <refresh_token>"
+}
+
+------------------------------------
+
+it will return a access token 
+
+###############################################################################################################
+
+<---- /dashboard/course/progress ---->
+
+<---header---->
+
+"Authorization" : "Bearer <access_token>"
+
+<--- body --->
+
+{
+    "user_id":"_id",
+    "course_id":"course_id",
+    "chapter_completed":"5"
+}

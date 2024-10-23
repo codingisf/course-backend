@@ -1,0 +1,41 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+myenv/
+env/
+.env
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Byte-compiled files
+*.pyc
+*.pyo
+
+# Test results
+*.coverage
+nosetests.xml
+coverage.xml
+*.cover
+
+# Distribution files
+build/
+dist/
+*.egg-info/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Other files
+*.DS_Store  # macOS
+*.egg  # egg distribution files
+*.pdb  # Python Debugger files
