@@ -1,9 +1,8 @@
 bson
-pydantic[email]
-fastapi==0.115.3
-uvicorn==0.32.0
-pymongo==4.10.1
-jose==1.0.0
-passlib==1.7.4
-pydantic==2.9.2
-python-dotenv==0.0.5
+fastapi
+uvicorn
+pymongo
+jose
+passlib
+pydantic
+python-dotenv
