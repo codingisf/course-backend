@@ -3,3 +3,6 @@ uvicorn
 pymongo
 jose
 passlib
+bson
+pydantic
+dotenv
