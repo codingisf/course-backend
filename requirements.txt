@@ -5,4 +5,4 @@ jose
 passlib
 bson
 pydantic
-dotenv
+python-dotenv
