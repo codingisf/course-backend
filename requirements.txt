@@ -5,4 +5,5 @@ jose
 passlib
 bson
 pydantic
+pydantic[email]
 python-dotenv
