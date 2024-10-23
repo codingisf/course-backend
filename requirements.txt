@@ -6,3 +6,4 @@ jose
 passlib
 pydantic
 python-dotenv
+pydantic[email]
