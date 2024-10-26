@@ -2,8 +2,6 @@
 
 from pydantic import BaseModel , EmailStr , Field # type: ignore
 from typing import List,Optional
-from bson import ObjectId #type: ignore
-import uuid
 
 class User(BaseModel):
     name : str
@@ -12,7 +10,6 @@ class User(BaseModel):
     password : str
 
 class Course(BaseModel):
-    id: Optional[str] = Field(default_factory=lambda: str(ObjectId()))
     course_id: str #type: ignore
     title: str
     description: str
