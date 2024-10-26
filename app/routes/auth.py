@@ -63,9 +63,9 @@ def login(response: Response,user: Login):
 
     print("Tokens generated successfully.")  # Log successful token generation
     response.set_cookie(key="token",value=access_token,secure=True, 
-        samesite="none",httponly=True,expires=3600)
+        samesite="none",partitioned=True,httponly=True,expires=3600)
     response.set_cookie(key="refresh_token", value=access_token,secure=True, 
-        samesite="none", httponly=True, expires=86400)  # 1 day expiration
+        samesite="none",partitioned=True, httponly=True, expires=86400)  # 1 day expiration
     response = JSONResponse(content={"message": "Login successful"})
     return{"login" :"successfully"}
     
