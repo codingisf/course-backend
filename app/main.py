@@ -16,7 +16,7 @@ app.add_middleware(
     allow_origins=["http://localhost:5173"],  # Frontend origin
     allow_credentials=True,
     allow_methods=["*"],  # Allow all HTTP methods (POST, GET, etc.)
-    allow_headers=["Access-Control-Allow-Headers", "Content-Type", "Authorization", "Access-Control-Allow-Origin","Set-Cookie"],  # Allow all headers (including Authorization, Content-Type)
+    allow_headers=["*"],  # Allow all headers (including Authorization, Content-Type)
 )
 
 
