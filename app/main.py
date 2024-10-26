@@ -1,6 +1,7 @@
 # app/main.py
 from fastapi import FastAPI 
 from app.routes import auth, course , enroll , progress
+from dotenv import load_dotenv
 from fastapi.middleware.cors import CORSMiddleware # from app.JWT_middleware import AuthenticateRequest
 import os
 import uvicorn 
