@@ -21,7 +21,8 @@ app.add_middleware(
 "Accept",
 "Authorization",
 "X-Request-With",],  # Allow all headers (including Authorization, Content-Type)
-    expose_headers=["Content-Disposition"]
+    expose_headers=["Content-Disposition"],
+    Access-Control-Allow-Origin:["http://localhost:5173/"]
 )
 
 # app.use(
