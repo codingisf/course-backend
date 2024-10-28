@@ -13,7 +13,7 @@ load_dotenv()
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173/"],  # Frontend origin
+    allow_origins=["http://localhost:5173/","https://course-frontend-klzqfq035-codingisfs-projects.vercel.app/"],  # Frontend origin
     allow_credentials=True,
     allow_methods=["*"],  # Allow all HTTP methods (POST, GET, etc.)
     allow_headers=["Origin",
@@ -22,7 +22,6 @@ app.add_middleware(
 "Authorization",
 "X-Request-With",],  # Allow all headers (including Authorization, Content-Type)
     expose_headers=["Content-Disposition"],
-    Access-Control-Allow-Origin:["http://localhost:5173/"]
 )
 
 # app.use(
