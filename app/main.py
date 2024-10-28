@@ -21,6 +21,7 @@ app.add_middleware(
 "Accept",
 "Authorization",
 "X-Request-With",],  # Allow all headers (including Authorization, Content-Type)
+    expose_headers=["Content-Disposition"]
 )
 
 # app.use(
