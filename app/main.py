@@ -16,9 +16,27 @@ app.add_middleware(
     allow_origins=["http://localhost:5173/"],  # Frontend origin
     allow_credentials=True,
     allow_methods=["*"],  # Allow all HTTP methods (POST, GET, etc.)
-    allow_headers=["*"],  # Allow all headers (including Authorization, Content-Type)
+    allow_headers=["Origin",
+"Content-Type",
+"Accept",
+"Authorization",
+"X-Request-With",],  # Allow all headers (including Authorization, Content-Type)
 )
 
+# app.use(
+# cors({
+# origin: “http://localhost:5173/”, // Explicitly specify the allowed origin
+# credentials: true, // Important for cookies, authorization headers with HTTPS
+# methods: [“GET”, “POST”, “PUT”, “DELETE”, “PATCH”, “OPTIONS”],
+# allowedHeaders: [
+# “Origin”,
+# “Content-Type”,
+# “Accept”,
+# “Authorization”,
+# “X-Request-With”,
+# ],
+# })
+# );
 
 app.include_router(auth.router, prefix="/auth", tags=["Auth"])
 app.include_router(course.router, prefix="/course", tags=["Courses"])
