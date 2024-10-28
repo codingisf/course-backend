@@ -16,12 +16,9 @@ app.add_middleware(
     allow_origins=["http://localhost:5173/","https://course-frontend-klzqfq035-codingisfs-projects.vercel.app/"],  # Frontend origin
     allow_credentials=True,
     allow_methods=["*"],  # Allow all HTTP methods (POST, GET, etc.)
-    allow_headers=["Origin",
-"Content-Type",
-"Accept",
-"Authorization",
-"X-Request-With",],  # Allow all headers (including Authorization, Content-Type)
+    allow_headers=["*"],  # Allow all headers (including Authorization, Content-Type)
     expose_headers=["Content-Disposition"],
+    Access-Control-Allow-Origin
 )
 
 # app.use(
