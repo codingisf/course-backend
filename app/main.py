@@ -10,10 +10,12 @@ import uvicorn
 
 load_dotenv()
 
+origins = ["http://localhost:5173/","https://course-frontend-klzqfq035-codingisfs-projects.vercel.app/"]
+
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173/","https://course-frontend-klzqfq035-codingisfs-projects.vercel.app/"],  # Frontend origin
+    allow_origins=origins,  # Frontend origin
     allow_credentials=True,
     allow_methods=["*"],  # Allow all HTTP methods (POST, GET, etc.)
     allow_headers=["*"],  # Allow all headers (including Authorization, Content-Type)
