@@ -18,7 +18,6 @@ app.add_middleware(
     allow_methods=["*"],  # Allow all HTTP methods (POST, GET, etc.)
     allow_headers=["*"],  # Allow all headers (including Authorization, Content-Type)
     expose_headers=["Content-Disposition"],
-    Access-Control-Allow-Origin
 )
 
 # app.use(
